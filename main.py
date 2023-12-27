@@ -9,6 +9,7 @@ from nltk.corpus import stopwords
 # Download NLTK stopwords data
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
 
 def fetch_job_description(url):
     try:
