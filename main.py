@@ -6,6 +6,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
 
+# Download NLTK stopwords data
+import nltk
+nltk.download('stopwords')
+
 def fetch_job_description(url):
     try:
         response = requests.get(url)
